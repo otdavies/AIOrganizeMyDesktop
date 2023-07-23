@@ -40,9 +40,10 @@ class FileOrganizer:
 
     def generate_prompt(self, file_metadata, folder_metadata):
         prompt = self.user_prompt
-        if len(self.created_folders) > 0:
+        existing_folders = self.created_folders | set(self.folders)
+        if len(existing_folders) > 0:
             prompt += "Existing folders you can optionally use: "
-            prompt += ", ".join(self.created_folders)
+            prompt += ", ".join(existing_folders)
             prompt += "\n\n"
 
         prompt += "Files to organize:\n"
@@ -132,6 +133,11 @@ class FileOrganizer:
             old_file_path = os.path.join(self.target_path, old_name)
             new_file_path = os.path.join(self.target_path, new_name)
             try:
+                if os.path.isfile(new_file_path):
+                    print(
+                        f'File {new_file_path} already exists, skipping, so we don\'t overwrite it!')
+                    continue
+
                 # Check if old file exists
                 if os.path.isfile(old_file_path):
                     # Determine if we need to create folders
