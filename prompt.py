@@ -1,12 +1,11 @@
 import json
 import openai
 
-# Load key from .env
-openai.api_key = open(".env", "r").readline().strip()
-
 
 class Prompt():
     def __init__(self, user_prompt, system_prompt=""):
+        # Load key from .env
+        openai.api_key = open(".env", "r").readline().strip()
         self.user_prompt = user_prompt
         self.system_prompt = system_prompt
         self.creativity = 0.7
