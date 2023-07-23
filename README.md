@@ -1,5 +1,14 @@
 # AIOrganizeMyDesktop
-Too lazy to organize my desktop, make gpt + BLIP-2 do it
+*Too lazy to organize my desktop, make gpt + BLIP-2 do it*
+
+![sRmr39vcIm](https://github.com/otdavies/AIOrganizeMyDesktop/assets/3145170/b1f1d44a-fa69-42b7-93a6-ef241f23de86)
+![NVIDIA_Share_ilWV3RypOw](https://github.com/otdavies/AIOrganizeMyDesktop/assets/3145170/0abd3bc2-9e3f-4558-af04-66dbc2cac17f)
+![cmd_wqTJmnsPIL](https://github.com/otdavies/AIOrganizeMyDesktop/assets/3145170/2929698f-665b-440e-806b-ffa68a0fc1e0)
+
+Renames images files based on content (BLIPv2):
+
+![explorer_yNHkNprOD9](https://github.com/otdavies/AIOrganizeMyDesktop/assets/3145170/6cbbe3c5-9876-4ca3-9d96-da26d4cc9375)
+
 
 # Running it
 - You need python installed, 3.7+
@@ -13,4 +22,7 @@ Too lazy to organize my desktop, make gpt + BLIP-2 do it
 # Adding `Organize Files` to your windows right click options:
 - run `python install.py`, this will need admin access to add it to the right click option menu.
 - run `python uninstall.py` to remove it from the right click menu
+
+# Disclaimer
+- This is a toy example and might damage your file organization. Use at your own risk.
   
