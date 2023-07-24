@@ -5,7 +5,7 @@
 ![NVIDIA_Share_ilWV3RypOw](https://github.com/otdavies/AIOrganizeMyDesktop/assets/3145170/0abd3bc2-9e3f-4558-af04-66dbc2cac17f)
 ![cmd_wqTJmnsPIL](https://github.com/otdavies/AIOrganizeMyDesktop/assets/3145170/2929698f-665b-440e-806b-ffa68a0fc1e0)
 
-Renames images files based on content (BLIPv2):
+Renames image files based on content (BLIPv2):
 
 ![explorer_yNHkNprOD9](https://github.com/otdavies/AIOrganizeMyDesktop/assets/3145170/6cbbe3c5-9876-4ca3-9d96-da26d4cc9375)
 
