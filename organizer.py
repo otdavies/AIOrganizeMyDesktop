@@ -8,8 +8,8 @@ from descriptor import ImageDescriber
 
 class FileOrganizer:
     def __init__(self, target_path):
-        self.user_prompt = "Organize the following files. Infer project name from file type, file name and description. You can put files in existing folders if they make sense. You can create folders.\n"
-        self.system_prompt = "You are a file organizer, attempt to clean up the files into folders and optionally rename them to be clearer. Only rename files with non-descriptive names that are unrelated to their content. Group things by similarity and description when possible"
+        self.user_prompt = "Organize the following files. Infer project name from file type, file name and description. You can put files in existing folders if they make sense. You can create folders. Only create folders that represent categories.\n"
+        self.system_prompt = "You are a file organizer, attempt to clean up the files into folders and optionally rename them to be clearer. Don't rename files that already have good descriptive names. Group things by similarity and description when possible"
         self.schema = """{
             "file_remap": {
                 "ExampleName.png": "Images/BetterExampleName.png",
